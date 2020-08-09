@@ -15,10 +15,6 @@
 
   &--no-b-padding-until-large {
     padding-bottom: 0;
-
-    @include atLarge {
-      padding-bottom: 4.5rem;
-    }
   }
 
   &--blue {
