@@ -1,0 +1,39 @@
+.testimonial {
+  background-color: rgba($color: #b3bbcc, $alpha: 0.7);
+  padding: 0 18px 1px 18px;
+
+  @include atMedium {
+    padding: 0 1.1825rem 1px 1.825rem;
+  }
+
+  &--last {
+    margin-bottom: 0;
+  }
+
+  &__photo {
+    border-radius: 80px;
+    overflow: hidden;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto -80px auto;
+    position: relative;
+    top: -80px;
+    border: 6px solid rgba($color: #b3bbcc, $alpha: 0.7);
+  }
+
+  &__title {
+    color: $mainBlue;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  &__subtitle {
+    color: $mainOrange;
+    text-align: center;
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin: 0.25rem 1rem;
+  }
+}
