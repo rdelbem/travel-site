@@ -1,1 +1,8 @@
-import '../styles/styles.scss'
+import "../styles/styles.scss";
+import MobileMenu from "./modules/MobileMenu";
+
+let mobileMenu = new MobileMenu();
+
+if (module.hot) {
+  module.hot.accept();
+}
