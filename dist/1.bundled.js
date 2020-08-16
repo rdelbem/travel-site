@@ -1,0 +1,15 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[1],{
+
+/***/ "./app/assets/scripts/modules/Modal.js":
+/*!*********************************************!*\
+  !*** ./app/assets/scripts/modules/Modal.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n\r\n\r\nclass Modal {\r\n  constructor() {\r\n    this.injectHTML();\r\n    this.modal = document.querySelector(\".modal\");\r\n    this.closeIcon = document.querySelector(\".modal__close\");\r\n    this.events();\r\n  }\r\n\r\n  events() {\r\n    //listen close click\r\n    this.closeIcon.addEventListener(\"click\", () => this.closeTheModal());\r\n\r\n    //pushes any key\r\n    document.addEventListener(\"keyup\", (e) => this.keyPressHandler(e));\r\n  }\r\n\r\n  keyPressHandler(e) {\r\n    if (e.keyCode == 27) {\r\n      this.closeTheModal();\r\n    }\r\n  }\r\n\r\n  openTheModal() {\r\n    this.modal.classList.add(\"modal--is-visible\");\r\n  }\r\n\r\n  closeTheModal() {\r\n    this.modal.classList.remove(\"modal--is-visible\");\r\n  }\r\n\r\n  injectHTML() {\r\n    document.body.insertAdjacentHTML(\r\n      \"beforeend\",\r\n      `\r\n    <div class=\"modal\">\r\n      <div class=\"modal__inner\">\r\n        <h2\r\n          class=\"section-title section-title--blue section-title--less-margin\"\r\n        >\r\n          <img src=\"assets/images/icons/mail.svg\" class=\"section-title__icon\" />\r\n          Get in <strong>Touch</strong>\r\n        </h2>\r\n        <div class=\"wrapper wrapper--narrow\">\r\n          <p class=\"modal__description\">\r\n            We will have an online order system in place soon. Until then,\r\n            connect with us on any of the platforms below!\r\n          </p>\r\n        </div>\r\n\r\n        <div class=\"social-icons\">\r\n          <a href=\"#\" class=\"social-icons__icon\"\r\n            ><img src=\"assets/images/icons/facebook.svg\" alt=\"Facebook\"\r\n          /></a>\r\n          <a href=\"#\" class=\"social-icons__icon\"\r\n            ><img src=\"assets/images/icons/twitter.svg\" alt=\"Twitter\"\r\n          /></a>\r\n          <a href=\"#\" class=\"social-icons__icon\"\r\n            ><img src=\"assets/images/icons/instagram.svg\" alt=\"Instagram\"\r\n          /></a>\r\n          <a href=\"#\" class=\"social-icons__icon\"\r\n            ><img src=\"assets/images/icons/youtube.svg\" alt=\"YouTube\"\r\n          /></a>\r\n        </div>\r\n      </div>\r\n      <div class=\"modal__close\">X</div>\r\n    </div>\r\n    `\r\n    );\r\n  }\r\n}\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (Modal);\r\n\n\n//# sourceURL=webpack:///./app/assets/scripts/modules/Modal.js?");
+
+/***/ })
+
+}]);
